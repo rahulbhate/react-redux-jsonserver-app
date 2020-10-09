@@ -1,0 +1,32 @@
+{
+  "customers": [
+    {
+      "id": 10,
+      "firstName": "Cory",
+      "lastName": "House",
+      "birthDate": "2020-10-08",
+      "createdAt": 1598778507721
+    },
+    {
+      "id": 11,
+      "firstName": "Martin",
+      "lastName": "Shub",
+      "birthDate": "2020-10-09",
+      "createdAt": 1602212313220
+    },
+    {
+      "id": 12,
+      "firstName": "John",
+      "lastName": "Crow",
+      "birthDate": "2010-06-09",
+      "createdAt": 1602244811500
+    },
+    {
+      "id": 13,
+      "firstName": "Jack",
+      "lastName": "Ramen",
+      "birthDate": "2006-02-22",
+      "createdAt": 1602244966371
+    }
+  ]
+}

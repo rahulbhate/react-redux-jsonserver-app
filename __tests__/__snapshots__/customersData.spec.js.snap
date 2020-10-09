@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customers data is correct 1`] = `
+Object {
+  "customers": Array [
+    Object {
+      "birthDate": "2020-10-08",
+      "createdAt": 1598778507721,
+      "firstName": "Cory",
+      "id": 10,
+      "lastName": "House",
+    },
+    Object {
+      "birthDate": "2020-10-09",
+      "createdAt": 1602212313220,
+      "firstName": "Martin",
+      "id": 11,
+      "lastName": "Shub",
+    },
+    Object {
+      "birthDate": "2010-06-09",
+      "createdAt": 1602244811500,
+      "firstName": "John",
+      "id": 12,
+      "lastName": "Crow",
+    },
+    Object {
+      "birthDate": "2006-02-22",
+      "createdAt": 1602244966371,
+      "firstName": "Jack",
+      "id": 13,
+      "lastName": "Ramen",
+    },
+  ],
+}
+`;
