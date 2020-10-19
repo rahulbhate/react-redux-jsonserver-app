@@ -6,6 +6,7 @@ import HomePage from "./home/HomePage";
 import Header from "./common/Header";
 import Footer from "./common/Footer";
 import CustomersPage from "./customers/CustomersPage";
+import SlidersPage from "./slider/slidersPage";
 import ManageCustomerPage from "./customers/ManageCustomerPage";
 import PageNotFound from "./PageNotFound";
 import { ToastContainer } from "react-toastify";
@@ -19,6 +20,7 @@ function App() {
         <Route path='/customers' component={CustomersPage} />
         <Route path='/customer/:slug' component={ManageCustomerPage} />
         <Route path='/customer' component={ManageCustomerPage} />
+        <Route path='/images' component={SlidersPage} />
         <Route component={PageNotFound} />
       </Switch>
       <ToastContainer autoClose={3000} hideProgressBar />
