@@ -10,6 +10,7 @@ import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
+import Button from '@material-ui/core/Button';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
@@ -25,7 +26,8 @@ const SlidersPage = ({
   ...props
 }) => {
   
-  const [loading, setLoading] = useState(false);
+  const [loading, setloading] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const classes = useStyles();
   useEffect(() => {
     console.log("Use Effect Hook Called");
@@ -35,35 +37,46 @@ const SlidersPage = ({
       });
     }
   }, []);
-
+   const CarouselLeftArrow = () => {
+      return (
+        <a
+          href="#"
+          className="carousel__arrow carousel__arrow--left"
+          onClick={() =>{}}
+        >
+        <span className="glyphicon glyphicon-arrow-left"></span>
+        </a>
+      );
+  }
+  const CarouselRightArrow = () => {
+    return (
+      <a
+        href="#"
+        className="carousel__arrow carousel__arrow--right"
+        onClick={() =>{}}
+      >
+      <span className="glyphicon glyphicon-arrow-right"></span>
+      </a>
+    );
+}
   return (
     <>
       {props.loading ? (
         <Spinner />
       ) : (
         <>
-        <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Title</TableCell>
-            <TableCell align="right">URL</TableCell>
-            <TableCell align="right">Thumbnail URL</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {images.map((row) => (
-            <TableRow key={row.id}>
-              <TableCell component="th" scope="row">
-                {row.title}
-              </TableCell>
-              <TableCell align="right">{row.url}</TableCell>
-              <TableCell align="right">{row.thumbnailUrl}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+      {images.map((row, index) => (
+        currentIndex === index ? 
+      <img src={row.thumbnailUrl} key={row.id}/> :null
+      ))}
+    <Button variant="contained" color="primary" onClick={()=> { setCurrentIndex(currentIndex + 1) }}>
+  Previous
+</Button>
+<CarouselLeftArrow />
+<Button variant="contained" color="secondary" onClick={()=> { setCurrentIndex(currentIndex + 1) }}>
+  Next
+</Button>
+<CarouselRightArrow />
         </>
       )}
     </>

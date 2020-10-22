@@ -7,10 +7,13 @@ import Header from "./common/Header";
 import Footer from "./common/Footer";
 import CustomersPage from "./customers/CustomersPage";
 import SlidersPage from "./slider/slidersPage";
+import TodosPage from "./todos/TodosPage";
+import ApiPage from "./apidata/ApiPage";
 import ManageCustomerPage from "./customers/ManageCustomerPage";
 import PageNotFound from "./PageNotFound";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "../App.css";
 function App() {
   return (
     <div className='App'>
@@ -21,10 +24,12 @@ function App() {
         <Route path='/customer/:slug' component={ManageCustomerPage} />
         <Route path='/customer' component={ManageCustomerPage} />
         <Route path='/images' component={SlidersPage} />
+        <Route path='/todos' component={TodosPage} />
+        <Route path='/api' component={ApiPage} />
         <Route component={PageNotFound} />
       </Switch>
       <ToastContainer autoClose={3000} hideProgressBar />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

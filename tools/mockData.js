@@ -29,6 +29,23 @@ const newCustomer = {
   birthDate:"",
 };
 
+const todos = [
+  {
+    "id": 1,
+    "title": "Learn About React Echo-system",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "title": "Buy Groceries",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "title": "Get together with friends",
+    "completed": false
+  }
+];
 const images = [
   {
     "albumId": 1,
@@ -91,5 +108,6 @@ const images = [
 module.exports = {
   newCustomer,
   customers,
-  images
+  images,
+  todos
 };

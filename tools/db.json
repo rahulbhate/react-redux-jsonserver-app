@@ -1,13 +1,6 @@
 {
   "customers": [
     {
-      "id": 10,
-      "firstName": "Cory",
-      "lastName": "House",
-      "birthDate": "2020-10-08",
-      "createdAt": 1598778507721
-    },
-    {
       "id": 11,
       "firstName": "Martin",
       "lastName": "Shub",
@@ -85,6 +78,23 @@
       "title": "aut porro officiis laborum odit ea laudantium corporis",
       "url": "https://via.placeholder.com/600/54176f",
       "thumbnailUrl": "https://via.placeholder.com/150/54176f"
+    }
+  ],
+  "todos":[
+    {
+      "id": 1,
+      "title": "Learn About React Echo-system",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Buy Groceries",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Get together with friends",
+      "completed": false
     }
   ]
 }

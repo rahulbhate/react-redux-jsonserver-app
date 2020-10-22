@@ -14,13 +14,28 @@ const Header = () => {
         Customers
       </NavLink>
       {" | "}
-      {" | "}
       <NavLink
         to='/images'
         className='f6 fw4 hover-black no-underline black-70 dn dib-ns pv2 ph3'
         activeStyle={activeStyle}
       >
         Images
+      </NavLink>
+      {" | "}
+      <NavLink
+        to='/todos'
+        className='f6 fw4 hover-black no-underline black-70 dn dib-ns pv2 ph3'
+        activeStyle={activeStyle}
+      >
+        Todos
+      </NavLink>
+      {" | "}
+      <NavLink
+        to='/api'
+        className='f6 fw4 hover-black no-underline black-70 dn dib-ns pv2 ph3'
+        activeStyle={activeStyle}
+      >
+        LOAD API DATA
       </NavLink>
     </>
   );
