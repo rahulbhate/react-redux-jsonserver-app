@@ -16,10 +16,10 @@
     },
     {
       "id": 13,
-      "firstName": "Jack",
-      "lastName": "Ramen",
-      "birthDate": "2006-02-22",
-      "createdAt": 1602244966371
+      "firstName": "Rahul",
+      "lastName": "Bhate",
+      "birthDate": "1980-10-27",
+      "createdAt": 1603776268336
     }
   ],
   "images": [
@@ -80,7 +80,7 @@
       "thumbnailUrl": "https://via.placeholder.com/150/54176f"
     }
   ],
-  "todos":[
+  "todos": [
     {
       "id": 1,
       "title": "Learn About React Echo-system",

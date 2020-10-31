@@ -1,5 +1,6 @@
-import initialState from "./initialState";
+import  initialState  from "./initialState";
 import * as types from "../actions/actionTypes";
+
 
 export default function apiDataReducer(state = initialState.data, action) {
   switch (action.type) {
